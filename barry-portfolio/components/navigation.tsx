@@ -12,7 +12,7 @@ export function Navigation() {
     <nav className="mb-px mix-blend-difference bg-black text-[rgb(250,250,250)] shadow-[0_0_0_1px_rgba(250,250,250,0.1)] fixed w-full left-0 right-0 top-0 z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl">
+          <Link href="/" className="text-xl font-bold">
             barryhmolina.com
           </Link>
 
@@ -20,25 +20,25 @@ export function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="#projects"
-              className="text-sm font-medium hover:opacity-70 transition-opacity"
+              className="text-sm font-medium font-mono hover:opacity-70 transition-opacity"
             >
               PROJECTS
             </Link>
             <Link
               href="#blog"
-              className="text-sm font-medium hover:opacity-70 transition-opacity"
+              className="text-sm font-medium font-mono hover:opacity-70 transition-opacity"
             >
               BLOG
             </Link>
             <Link
               href="#about"
-              className="text-sm font-medium hover:opacity-70 transition-opacity"
+              className="text-sm font-medium font-mono hover:opacity-70 transition-opacity"
             >
               ABOUT
             </Link>
             <Link
               href="#contact"
-              className="text-sm font-medium hover:opacity-70 transition-opacity"
+              className="text-sm font-medium font-mono hover:opacity-70 transition-opacity"
             >
               CONTACT
             </Link>
