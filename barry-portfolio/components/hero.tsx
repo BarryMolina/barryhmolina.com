@@ -33,7 +33,7 @@ export function Hero() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-black text-black hover:bg-black hover:text-white cursor-pointer"
+                    className="border-black text-black hover:bg-gray-100 hover:text-black cursor-pointer"
                   >
                     READ BLOG
                   </Button>
