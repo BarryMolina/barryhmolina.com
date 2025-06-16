@@ -24,7 +24,7 @@ export function Hero() {
                 <Link href="#projects">
                   <Button
                     size="lg"
-                    className="bg-black text-white hover:bg-gray-800 cursor-pointer"
+                    className="bg-black text-white hover:bg-gray-800 cursor-pointer w-full"
                   >
                     VIEW PROJECTS
                   </Button>
@@ -33,7 +33,7 @@ export function Hero() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-black text-black hover:bg-gray-100 hover:text-black cursor-pointer"
+                    className="border-black text-black hover:bg-gray-100 hover:text-black cursor-pointer w-full"
                   >
                     READ BLOG
                   </Button>
