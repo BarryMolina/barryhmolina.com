@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -20,19 +21,23 @@ export function Hero() {
               </div>
 
               <div className="font-mono flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="bg-black text-white hover:bg-gray-800 cursor-pointer"
-                >
-                  VIEW PROJECTS
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-black text-black hover:bg-black hover:text-white cursor-pointer"
-                >
-                  READ BLOG
-                </Button>
+                <Link href="#projects">
+                  <Button
+                    size="lg"
+                    className="bg-black text-white hover:bg-gray-800 cursor-pointer"
+                  >
+                    VIEW PROJECTS
+                  </Button>
+                </Link>
+                <Link href="#blog">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-black text-black hover:bg-black hover:text-white cursor-pointer"
+                  >
+                    READ BLOG
+                  </Button>
+                </Link>
               </div>
 
               <div className="flex items-center gap-6">
