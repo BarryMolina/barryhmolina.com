@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -76,6 +76,16 @@ export function Navigation() {
         >
           <SheetHeader>
             <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
+            <SheetClose asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute top-4 right-4"
+                aria-label="Close"
+              >
+                <X className="h-6 w-6 text-black" />
+              </Button>
+            </SheetClose>
           </SheetHeader>
           <nav className="flex flex-col w-full px-8 gap-6">
             <SheetClose asChild>
