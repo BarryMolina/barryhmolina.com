@@ -1,15 +1,16 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white py-16 px-4 sm:px-6 lg:px-8">
+    <footer className="nav-shield bg-black text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">BARRY MOLINA</h3>
             <p className="text-gray-400 leading-relaxed">
-              Software Engineer & Problem Solver building scalable applications with modern technologies.
+              Software Engineer & Problem Solver building scalable applications
+              with modern technologies.
             </p>
           </div>
 
@@ -17,16 +18,28 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <nav className="flex flex-col space-y-2">
-              <a href="#projects" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#projects"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Projects
               </a>
-              <a href="#blog" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#blog"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Blog
               </a>
-              <a href="#about" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#about"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 About
               </a>
-              <a href="#contact" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#contact"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Contact
               </a>
             </nav>
@@ -71,7 +84,9 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Barry Molina. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">
+              © {new Date().getFullYear()} Barry Molina. All rights reserved.
+            </p>
             <div className="flex items-center gap-6 text-sm text-gray-400">
               <a href="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
@@ -84,5 +99,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

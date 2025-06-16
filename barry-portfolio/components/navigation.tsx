@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="mb-px mix-blend-difference bg-[rgb(0,0,0)] text-[rgb(250,250,250)] shadow-[rgba(250,250,250,0)_0px_0px_0px_0px,_rgba(250,250,250,0)_0px_0px_0px_0px,_rgba(250,250,250,0.1)_0px_0px_0px_1px] fixed w-full left-0 right-0 top-0 z-50">
+    <nav className="mb-px mix-blend-difference bg-[rgb(0,0,0)] text-[rgb(250,250,250)] shadow-[rgba(250,250,250,0)_0px_0px_0px_0px,_rgba(250,250,250,0)_0px_0px_0px_0px,_rgba(250,250,250,0.1)_0px_0px_0px_1px] fixed w-full left-0 right-0 top-0 z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold">
@@ -18,16 +18,28 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="#projects" className="text-sm font-medium hover:opacity-70 transition-opacity">
+            <Link
+              href="#projects"
+              className="text-sm font-medium hover:opacity-70 transition-opacity"
+            >
               PROJECTS
             </Link>
-            <Link href="#blog" className="text-sm font-medium hover:opacity-70 transition-opacity">
+            <Link
+              href="#blog"
+              className="text-sm font-medium hover:opacity-70 transition-opacity"
+            >
               BLOG
             </Link>
-            <Link href="#about" className="text-sm font-medium hover:opacity-70 transition-opacity">
+            <Link
+              href="#about"
+              className="text-sm font-medium hover:opacity-70 transition-opacity"
+            >
               ABOUT
             </Link>
-            <Link href="#contact" className="text-sm font-medium hover:opacity-70 transition-opacity">
+            <Link
+              href="#contact"
+              className="text-sm font-medium hover:opacity-70 transition-opacity"
+            >
               CONTACT
             </Link>
           </div>
@@ -80,5 +92,5 @@ export function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }

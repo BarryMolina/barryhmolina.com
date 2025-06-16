@@ -1,6 +1,6 @@
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Calendar, Clock } from "lucide-react"
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Calendar, Clock } from "lucide-react";
 
 const blogPosts = [
   {
@@ -30,17 +30,22 @@ const blogPosts = [
     date: "Dec 5, 2024",
     type: "technical",
   },
-]
+];
 
 export function BlogSection() {
   return (
-    <section id="blog" className="py-24 px-4 sm:px-6 lg:px-8 bg-white text-black">
+    <section
+      id="blog"
+      className="nav-shield py-24 px-4 sm:px-6 lg:px-8 bg-white text-black"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">Latest Insights</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+            Latest Insights
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl">
-            Technical deep-dives, problem-solving approaches, and thoughts on the evolving landscape of software
-            development.
+            Technical deep-dives, problem-solving approaches, and thoughts on
+            the evolving landscape of software development.
           </p>
         </div>
 
@@ -53,7 +58,10 @@ export function BlogSection() {
               <div className="space-y-6">
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <Badge variant="outline" className="border-black/20 text-black">
+                    <Badge
+                      variant="outline"
+                      className="border-black/20 text-black"
+                    >
                       {post.category}
                     </Badge>
                     <div className="flex items-center gap-4 text-sm text-gray-600">
@@ -68,13 +76,19 @@ export function BlogSection() {
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-bold group-hover:text-gray-700 transition-colors">{post.title}</h3>
+                  <h3 className="text-2xl font-bold group-hover:text-gray-700 transition-colors">
+                    {post.title}
+                  </h3>
 
-                  <p className="text-gray-600 leading-relaxed">{post.excerpt}</p>
+                  <p className="text-gray-600 leading-relaxed">
+                    {post.excerpt}
+                  </p>
                 </div>
 
                 <div className="pt-4">
-                  <span className="text-black font-medium group-hover:underline">Read Article →</span>
+                  <span className="text-black font-medium group-hover:underline">
+                    Read Article →
+                  </span>
                 </div>
               </div>
             </article>
@@ -82,11 +96,15 @@ export function BlogSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-black text-black hover:bg-black hover:text-white">
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-black text-black hover:bg-black hover:text-white"
+          >
             VIEW ALL POSTS
           </Button>
         </div>
       </div>
     </section>
-  )
+  );
 }

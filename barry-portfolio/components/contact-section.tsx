@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
-import { Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -15,31 +15,39 @@ export function ContactSection() {
     email: "",
     subject: "",
     message: "",
-  })
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission
-    console.log("Form submitted:", formData)
-  }
+    console.log("Form submitted:", formData);
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
-    }))
-  }
+    }));
+  };
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-white text-black">
+    <section
+      id="contact"
+      className="nav-shield py-24 px-4 sm:px-6 lg:px-8 bg-white text-black"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             <div className="space-y-6">
-              <h2 className="text-4xl sm:text-5xl font-bold">Let's Work Together</h2>
+              <h2 className="text-4xl sm:text-5xl font-bold">
+                Let's Work Together
+              </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                I'm always interested in new opportunities, challenging projects, and collaborating with talented teams.
-                Let's discuss how we can bring your ideas to life.
+                I'm always interested in new opportunities, challenging
+                projects, and collaborating with talented teams. Let's discuss
+                how we can bring your ideas to life.
               </p>
             </div>
 
@@ -144,7 +152,11 @@ export function ContactSection() {
                 />
               </div>
 
-              <Button type="submit" size="lg" className="w-full bg-black text-white hover:bg-gray-800">
+              <Button
+                type="submit"
+                size="lg"
+                className="w-full bg-black text-white hover:bg-gray-800"
+              >
                 Send Message
               </Button>
             </form>
@@ -152,5 +164,5 @@ export function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

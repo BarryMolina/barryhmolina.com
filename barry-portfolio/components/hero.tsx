@@ -1,10 +1,10 @@
-import { Navigation } from "@/components/navigation"
-import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { Navigation } from "@/components/navigation";
+import { Button } from "@/components/ui/button";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col bg-white text-black">
+    <section className="nav-shield relative min-h-screen flex flex-col bg-white text-black">
       <Navigation />
 
       <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
@@ -18,28 +18,44 @@ export function Hero() {
                   <span className="text-gray-600">& Problem Solver</span>
                 </h1>
                 <p className="text-xl text-gray-600 max-w-2xl">
-                  Building scalable applications and solving complex technical challenges with modern technologies and
-                  clean, efficient code.
+                  Building scalable applications and solving complex technical
+                  challenges with modern technologies and clean, efficient code.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-black text-white hover:bg-gray-800">
+                <Button
+                  size="lg"
+                  className="bg-black text-white hover:bg-gray-800"
+                >
                   VIEW PROJECTS
                 </Button>
-                <Button size="lg" variant="outline" className="border-black text-black hover:bg-black hover:text-white">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-black text-black hover:bg-black hover:text-white"
+                >
                   READ BLOG
                 </Button>
               </div>
 
               <div className="flex items-center gap-6">
-                <a href="https://github.com" className="text-gray-600 hover:text-black transition-colors">
+                <a
+                  href="https://github.com"
+                  className="text-gray-600 hover:text-black transition-colors"
+                >
                   <Github className="h-6 w-6" />
                 </a>
-                <a href="https://linkedin.com" className="text-gray-600 hover:text-black transition-colors">
+                <a
+                  href="https://linkedin.com"
+                  className="text-gray-600 hover:text-black transition-colors"
+                >
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a href="mailto:barry@example.com" className="text-gray-600 hover:text-black transition-colors">
+                <a
+                  href="mailto:barry@example.com"
+                  className="text-gray-600 hover:text-black transition-colors"
+                >
                   <Mail className="h-6 w-6" />
                 </a>
               </div>
@@ -67,5 +83,5 @@ export function Hero() {
         <ArrowDown className="h-6 w-6 text-gray-600" />
       </div>
     </section>
-  )
+  );
 }
