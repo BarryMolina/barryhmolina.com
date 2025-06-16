@@ -12,14 +12,10 @@ export function Hero() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
-                  Software Engineer
-                  <br />
-                  <span className="text-gray-600">& Problem Solver</span>
-                </h1>
+                <h1 className="text-5xl leading-tight">Barry Molina</h1>
                 <p className="text-xl text-gray-600 max-w-2xl">
-                  Building scalable applications and solving complex technical
-                  challenges with modern technologies and clean, efficient code.
+                  Ballet artist turned software engineer with an affinity for
+                  clean code and robust system design.
                 </p>
               </div>
 
