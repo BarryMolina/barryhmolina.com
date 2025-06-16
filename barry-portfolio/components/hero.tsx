@@ -13,23 +13,23 @@ export function Hero() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-5xl leading-tight">Barry Molina</h1>
-                <p className="text-xl text-gray-600 max-w-2xl">
+                <p className="text-md text-gray-600 max-w-2xl">
                   Ballet artist turned software engineer with an affinity for
                   clean code and robust system design.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="font-mono flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-black text-white hover:bg-gray-800"
+                  className="bg-black text-white hover:bg-gray-800 cursor-pointer"
                 >
                   VIEW PROJECTS
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-black text-black hover:bg-black hover:text-white"
+                  className="border-black text-black hover:bg-black hover:text-white cursor-pointer"
                 >
                   READ BLOG
                 </Button>
