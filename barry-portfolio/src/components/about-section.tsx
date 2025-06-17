@@ -26,7 +26,7 @@ export function AboutSection() {
                 <h2 className="text-4xl sm:text-5xl font-bold">About Me</h2>
                 <div className="space-y-4 text-lg text-gray-400 leading-relaxed">
                   <p>
-                    I'm a passionate software engineer with over 5 years of
+                    I&apos;m a passionate software engineer with over 5 years of
                     experience building scalable web applications and solving
                     complex technical challenges. My expertise spans full-stack
                     development, cloud architecture, and modern DevOps
@@ -34,10 +34,10 @@ export function AboutSection() {
                   </p>
                   <p>
                     I believe in writing clean, maintainable code and staying
-                    current with emerging technologies. When I'm not coding,
-                    you'll find me contributing to open source projects, writing
-                    technical blog posts, or exploring the latest developments
-                    in AI and machine learning.
+                    current with emerging technologies. When I&apos;m not
+                    coding, you&apos;ll find me contributing to open source
+                    projects, writing technical blog posts, or exploring the
+                    latest developments in AI and machine learning.
                   </p>
                 </div>
               </div>
