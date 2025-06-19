@@ -4,10 +4,12 @@ import { BlogSection } from "@/components/blog-section";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <main className="min-h-screen">
         <Hero />
         <FeaturedProjects />

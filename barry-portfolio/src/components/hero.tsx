@@ -1,4 +1,3 @@
-import { Navigation } from "@/components/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
@@ -6,8 +5,6 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section className="nav-shield relative min-h-screen flex flex-col bg-white text-black">
-      <Navigation />
-
       <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -15,7 +12,7 @@ export function Hero() {
               <div className="space-y-4">
                 <h1 className="text-5xl leading-tight">Barry Molina</h1>
                 <p className="text-md text-gray-600 max-w-2xl">
-                  Ballet artist turned software engineer with an affinity for
+                  ballet artist turned software engineer with an affinity for
                   clean code and robust system design.
                 </p>
               </div>
