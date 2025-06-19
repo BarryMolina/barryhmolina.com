@@ -52,6 +52,15 @@ export function FeaturedProjects() {
               Featured Projects
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl"></p>
+            <div className="mt-8">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-black"
+              >
+                ALL PROJECTS
+              </Button>
+            </div>
           </div>
 
           {/* Right: Project cards grid */}
@@ -113,16 +122,6 @@ export function FeaturedProjects() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-black"
-              >
-                VIEW ALL PROJECTS
-              </Button>
             </div>
           </div>
         </div>
