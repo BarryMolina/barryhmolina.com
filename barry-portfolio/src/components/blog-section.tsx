@@ -36,23 +36,29 @@ export function BlogSection() {
   return (
     <section id="blog" className="nav-shield bg-white text-black">
       <div className="max-w-7xl mx-auto section-padding">
-        <div className="mb-16">
-          <h2 className="heading-lg">Blog</h2>
-          <p className="text-xl text-gray-600 max-w-3xl">
-            Technical deep-dives, problem-solving approaches, and thoughts on
-            the evolving landscape of software development.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
-            <article
-              key={index}
-              className="bg-white border border-black/10 rounded-lg p-8 hover:border-black/20 transition-all duration-300 group cursor-pointer shadow-sm"
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Left column */}
+          <div className="md:col-span-1 flex flex-col items-start">
+            <h2 className="heading-lg mb-4">Blog</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mb-8">
+              Technical deep-dives, problem-solving approaches, and thoughts on
+              the evolving landscape of software development.
+            </p>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-black text-black hover:bg-black hover:text-white"
             >
-              <div className="space-y-6">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
+              ALL POSTS
+            </Button>
+          </div>
+
+          {/* Right column */}
+          <div className="md:col-span-2 flex flex-col gap-12">
+            {blogPosts.map((post, index) => (
+              <div key={index} className="flex flex-col gap-6 group">
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-3 mb-2">
                     <Badge
                       variant="outline"
                       className="border-black/20 text-black"
@@ -70,34 +76,22 @@ export function BlogSection() {
                       </div>
                     </div>
                   </div>
-
-                  <h3 className="text-2xl font-bold group-hover:text-gray-700 transition-colors">
-                    {post.title}
-                  </h3>
-
-                  <p className="text-gray-600 leading-relaxed">
+                  <h3 className="text-3xl font-bold mb-2">{post.title}</h3>
+                  <p className="text-gray-700 text-lg mb-2 max-w-2xl">
                     {post.excerpt}
                   </p>
                 </div>
-
-                <div className="pt-4">
-                  <span className="text-black font-medium group-hover:underline">
+                <div className="pt-2">
+                  <span className="text-black font-medium group-hover:underline cursor-pointer">
                     Read Article →
                   </span>
                 </div>
+                {index < blogPosts.length - 1 && (
+                  <hr className="border-t border-black/10 my-2" />
+                )}
               </div>
-            </article>
-          ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-black text-black hover:bg-black hover:text-white"
-          >
-            VIEW ALL POSTS
-          </Button>
+            ))}
+          </div>
         </div>
       </div>
     </section>
