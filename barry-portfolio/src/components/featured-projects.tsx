@@ -53,7 +53,7 @@ export function FeaturedProjects() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-black"
+                className="border-white text-white hover:bg-gray-800"
               >
                 ALL PROJECTS
               </Button>

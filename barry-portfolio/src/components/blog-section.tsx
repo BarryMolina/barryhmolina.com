@@ -47,7 +47,7 @@ export function BlogSection() {
             <Button
               size="lg"
               variant="outline"
-              className="border-black text-black hover:bg-black hover:text-white"
+              className="border-black text-black hover:bg-gray-100"
             >
               ALL POSTS
             </Button>
