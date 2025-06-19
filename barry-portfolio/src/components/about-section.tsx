@@ -23,7 +23,7 @@ export function AboutSection() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h2 className="text-4xl sm:text-5xl font-bold">About Me</h2>
+                <h2 className="heading-lg">About</h2>
                 <div className="space-y-4 text-lg text-gray-400 leading-relaxed">
                   <p>
                     I&apos;m a passionate software engineer with over 5 years of

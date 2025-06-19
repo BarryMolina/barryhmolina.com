@@ -37,9 +37,7 @@ export function BlogSection() {
     <section id="blog" className="nav-shield bg-white text-black">
       <div className="max-w-7xl mx-auto section-padding">
         <div className="mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Latest Insights
-          </h2>
+          <h2 className="heading-lg">Blog</h2>
           <p className="text-xl text-gray-600 max-w-3xl">
             Technical deep-dives, problem-solving approaches, and thoughts on
             the evolving landscape of software development.

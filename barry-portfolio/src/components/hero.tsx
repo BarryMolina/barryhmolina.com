@@ -10,7 +10,7 @@ export function Hero() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-5xl leading-tight">Barry Molina</h1>
+                <h1 className="heading-md">Barry Molina</h1>
                 <p className="text-md text-gray-600 max-w-2xl">
                   ballet artist turned software engineer with an affinity for
                   clean code and robust system design.

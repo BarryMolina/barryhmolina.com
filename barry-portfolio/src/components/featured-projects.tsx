@@ -46,11 +46,8 @@ export function FeaturedProjects() {
     <section id="projects" className="nav-shield bg-black text-white">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
-          {/* Left: Heading and description */}
-          <div className="md:w-1/3 w-full mb-12 md:mb-0">
-            <h2 className="tracking-tighter text-6xl sm:text-7xl mb-6 text-white">
-              Featured Projects
-            </h2>
+          <div className="md:w-1/3 w-full">
+            <h2 className="heading-lg text-white">Featured Projects</h2>
             <p className="text-xl text-gray-400 max-w-3xl"></p>
             <div className="mt-8">
               <Button

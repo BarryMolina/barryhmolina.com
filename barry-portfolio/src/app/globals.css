@@ -63,3 +63,12 @@
 .section-padding {
   @apply pt-8 pb-24 px-4 sm:px-6 lg:px-8;
 }
+
+/* Large heading utility */
+.heading-lg {
+  @apply tracking-tighter text-6xl sm:text-7xl mb-6;
+}
+
+.heading-md {
+  @apply tracking-tighter text-5xl sm:text-6xl mb-4;
+}

@@ -39,9 +39,7 @@ export function ContactSection() {
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h2 className="text-4xl sm:text-5xl font-bold">
-                  Let&apos;s Work Together
-                </h2>
+                <h2 className="heading-md">Let&apos;s Work Together</h2>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   I&apos;m always interested in new opportunities, challenging
                   projects, and collaborating with talented teams. Let&apos;s
