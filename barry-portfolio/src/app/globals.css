@@ -29,6 +29,27 @@
     --ring: 0 0% 100%;
     --radius: 0.5rem;
     --nav-height: 4rem;
+    --section-padding-y: 6rem;
+    --section-padding-y-top: calc(var(--section-padding-y) - var(--nav-height));
+  }
+
+  @media (min-width: 640px) {
+    /* sm */
+    :root {
+      --section-padding-y: 8rem;
+      --section-padding-y-top: calc(
+        var(--section-padding-y) - var(--nav-height)
+      );
+    }
+  }
+  @media (min-width: 1024px) {
+    /* lg */
+    :root {
+      --section-padding-y: 12rem;
+      --section-padding-y-top: calc(
+        var(--section-padding-y) - var(--nav-height)
+      );
+    }
   }
 
   * {
@@ -61,7 +82,9 @@
 }
 
 .section-padding {
-  @apply pt-8 pb-24 px-4 sm:px-6 lg:px-8;
+  padding-top: var(--section-padding-y-top);
+  padding-bottom: var(--section-padding-y);
+  @apply px-4 sm:px-6 lg:px-8;
 }
 
 /* Large heading utility */

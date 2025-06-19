@@ -39,7 +39,7 @@ export function ContactSection() {
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h2 className="heading-md">Let&apos;s Work Together</h2>
+                <h2 className="heading-md">let&apos;s work together</h2>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   I&apos;m always interested in new opportunities, challenging
                   projects, and collaborating with talented teams. Let&apos;s
@@ -49,7 +49,7 @@ export function ContactSection() {
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
+                  <h3 className="text-3xl mb-4">get in touch</h3>
                   <div className="space-y-4">
                     <a
                       href="mailto:barry@example.com"
