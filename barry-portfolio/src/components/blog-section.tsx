@@ -76,13 +76,11 @@ export function BlogSection() {
                       </div>
                     </div>
                   </div>
-                  <h3 className="text-3xl font-bold mb-2">{post.title}</h3>
-                  <p className="text-gray-700 text-lg mb-2 max-w-2xl">
-                    {post.excerpt}
-                  </p>
+                  <h3 className="text-3xl mb-2">{post.title}</h3>
+                  <p className="text-gray-700 mb-2 max-w-2xl">{post.excerpt}</p>
                 </div>
                 <div className="pt-2">
-                  <span className="text-black font-medium group-hover:underline cursor-pointer">
+                  <span className="text-black font-medium hover:underline cursor-pointer">
                     Read Article →
                   </span>
                 </div>
