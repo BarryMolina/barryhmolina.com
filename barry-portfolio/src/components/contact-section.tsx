@@ -34,7 +34,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="nav-shield bg-white text-black">
-      <div className="py-24 px-4 sm:px-6 lg:px-8">
+      <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="space-y-8">

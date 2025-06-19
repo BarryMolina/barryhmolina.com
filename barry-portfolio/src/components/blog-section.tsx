@@ -35,7 +35,7 @@ const blogPosts = [
 export function BlogSection() {
   return (
     <section id="blog" className="nav-shield bg-white text-black">
-      <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto section-padding">
         <div className="mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
             Latest Insights

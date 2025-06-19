@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 export function Footer() {
   return (
     <footer className="nav-shield bg-black text-white">
-      <div className="py-16 px-4 sm:px-6 lg:px-8">
+      <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12">
             {/* Brand Section */}

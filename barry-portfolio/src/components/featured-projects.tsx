@@ -30,22 +30,28 @@ const projects = [
     github: "https://github.com",
     demo: "https://demo.com",
   },
+  {
+    title: "Portfolio Website Redesign",
+    description:
+      "Modern, responsive portfolio website built with Next.js and Tailwind CSS, featuring smooth animations and a CMS backend.",
+    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Sanity.io"],
+    status: "Completed",
+    github: "https://github.com",
+    demo: "https://demo.com",
+  },
 ];
 
 export function FeaturedProjects() {
   return (
     <section id="projects" className="nav-shield bg-black text-white">
-      <div className="py-24 px-4 sm:px-6 lg:px-8">
+      <div className="section-padding">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
           {/* Left: Heading and description */}
           <div className="md:w-1/3 w-full mb-12 md:mb-0">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
+            <h2 className="tracking-tighter text-6xl sm:text-7xl mb-6 text-white">
               Featured Projects
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl">
-              A selection of recent projects showcasing technical expertise
-              across various technologies and problem domains.
-            </p>
+            <p className="text-xl text-gray-400 max-w-3xl"></p>
           </div>
 
           {/* Right: Project cards grid */}
@@ -59,7 +65,7 @@ export function FeaturedProjects() {
                   <div className="space-y-6">
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
-                        <h3 className="text-2xl font-bold text-black">
+                        <h3 className="text-2xl tracking-tighter text-black">
                           {project.title}
                         </h3>
                         <Badge

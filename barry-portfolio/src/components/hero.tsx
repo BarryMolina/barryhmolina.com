@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="nav-shield relative min-h-screen flex flex-col bg-white text-black">
       <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto section-padding">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
@@ -65,9 +65,7 @@ export function Hero() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-64 h-64 border-2 border-black/20 rotate-12 transform">
                     <div className="w-full h-full border-2 border-black/40 rotate-12 transform">
-                      <div className="w-full h-full border-2 border-black/60 rotate-12 transform flex items-center justify-center">
-                        <div className="w-32 h-32 bg-black/10 backdrop-blur-sm rotate-12 transform"></div>
-                      </div>
+                      <div className="w-full h-full border-2 border-black/60 rotate-12 transform flex items-center justify-center"></div>
                     </div>
                   </div>
                 </div>
