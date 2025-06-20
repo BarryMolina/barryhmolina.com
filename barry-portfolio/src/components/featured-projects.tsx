@@ -71,36 +71,38 @@ export function FeaturedProjects() {
               {projects.map((project, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 p-8 hover:bg-gray-50 transition-all duration-300 group"
+                  className="bg-white border border-gray-200 p-8 hover:bg-gray-50 transition-all duration-300 group h-full flex flex-col"
                 >
-                  <div className="space-y-6">
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between">
-                        <h3 className="text-2xl tracking-tighter text-black">
-                          {project.title}
-                        </h3>
-                        <Badge
-                          variant="outline"
-                          className="border-gray-300 text-gray-700"
-                        >
-                          {project.status}
-                        </Badge>
+                  <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                      <div className="space-y-3">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-2xl tracking-tighter text-black">
+                            {project.title}
+                          </h3>
+                          <Badge
+                            variant="outline"
+                            className="border-gray-300 text-gray-700"
+                          >
+                            {project.status}
+                          </Badge>
+                        </div>
+                        <p className="text-gray-600 leading-relaxed">
+                          {project.description}
+                        </p>
                       </div>
-                      <p className="text-gray-600 leading-relaxed">
-                        {project.description}
-                      </p>
-                    </div>
 
-                    <div className="flex flex-wrap gap-2">
-                      {project.tech.map((tech, techIndex) => (
-                        <Badge
-                          key={techIndex}
-                          variant="secondary"
-                          className="bg-gray-100 text-gray-800 border-0"
-                        >
-                          {tech}
-                        </Badge>
-                      ))}
+                      <div className="flex flex-wrap gap-2 mt-6">
+                        {project.tech.map((tech, techIndex) => (
+                          <Badge
+                            key={techIndex}
+                            variant="secondary"
+                            className="bg-gray-100 text-gray-800 border-0"
+                          >
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
 
                     <div className="flex gap-4 pt-4">
