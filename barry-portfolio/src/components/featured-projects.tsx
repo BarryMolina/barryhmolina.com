@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { StaggeredAnimation } from "@/components/staggered-animation";
 
 const projects = [
   {
@@ -62,7 +63,11 @@ export function FeaturedProjects() {
 
           {/* Right: Project cards grid */}
           <div className="md:w-2/3 w-full">
-            <div className="grid md:grid-cols-2 gap-8">
+            <StaggeredAnimation
+              className="grid md:grid-cols-2 gap-8"
+              animation="fadeUp"
+              staggerDelay={0.15}
+            >
               {projects.map((project, index) => (
                 <div
                   key={index}
@@ -119,7 +124,7 @@ export function FeaturedProjects() {
                   </div>
                 </div>
               ))}
-            </div>
+            </StaggeredAnimation>
           </div>
         </div>
       </div>
