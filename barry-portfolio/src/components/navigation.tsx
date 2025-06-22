@@ -90,14 +90,6 @@ export function Navigation() {
           <nav className="flex flex-col w-full px-8 gap-6">
             <SheetClose asChild>
               <Link
-                href="/"
-                className="text-lg font-mono hover:opacity-70 transition-opacity py-2 text-black"
-              >
-                HOME
-              </Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link
                 href="#projects"
                 className="text-lg font-mono hover:opacity-70 transition-opacity py-2 text-black"
               >
