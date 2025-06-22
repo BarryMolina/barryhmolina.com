@@ -33,7 +33,10 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="nav-shield bg-white text-black">
+    <section
+      id="contact"
+      className="nav-shield bg-white text-black scroll-mt-[var(--section-padding-y-top)]"
+    >
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">

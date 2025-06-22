@@ -44,7 +44,10 @@ const projects = [
 
 export function FeaturedProjects() {
   return (
-    <section id="projects" className="nav-shield bg-black text-white">
+    <section
+      id="projects"
+      className="nav-shield bg-black text-white scroll-mt-[var(--section-padding-y-top)]"
+    >
       <div className="section-padding">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
           <div className="md:w-1/3 w-full">

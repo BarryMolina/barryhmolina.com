@@ -34,7 +34,10 @@ const blogPosts = [
 
 export function BlogSection() {
   return (
-    <section id="blog" className="nav-shield bg-white text-black">
+    <section
+      id="blog"
+      className="nav-shield bg-white text-black scroll-mt-[var(--section-padding-y-top)]"
+    >
       <div className="max-w-7xl mx-auto section-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Left column */}
