@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 export function Hero() {
   return (
-    <section className="nav-shield relative min-h-screen flex flex-col bg-white text-black">
+    <section className="nav-shield relative min-h-[calc(100vh-var(--nav-height))] flex flex-col bg-white text-black">
       <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto section-padding">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
